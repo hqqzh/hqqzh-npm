@@ -4,12 +4,15 @@ import { useMemberStore } from '@/stores'
 const memberStore = useMemberStore()
 // 退出登录
 const onLogout = () => {
+  // 模态弹窗
   uni.showModal({
     content: '是否退出登录？',
     confirmColor: '#27BA9B',
     success: (res) => {
       if (res.confirm) {
+        // 清理用户信息
         memberStore.clearProfile()
+        // 返回上一页
         uni.navigateBack()
       }
     },
@@ -19,11 +22,13 @@ const onLogout = () => {
 
 <template>
   <view class="viewport">
+    <!-- 列表1 -->
     <view class="list" v-if="memberStore.profile">
       <navigator url="/pagesMember/address/address" hover-class="none" class="item arrow">
         我的收货地址
       </navigator>
     </view>
+    <!-- #ifdef MP-WEIXIN -->
     <!-- 列表2 -->
     <view class="list">
       <button hover-class="none" class="item arrow" open-type="openSetting">授权管理</button>
