@@ -12,7 +12,6 @@ const onLogout = () => {
       if (res.confirm) {
         // 清理用户信息
         memberStore.clearProfile()
-        // 返回上一页
         uni.navigateBack()
       }
     },
