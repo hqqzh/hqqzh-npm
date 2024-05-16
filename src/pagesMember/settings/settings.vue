@@ -4,7 +4,6 @@ import { useMemberStore } from '@/stores'
 const memberStore = useMemberStore()
 // 退出登录
 const onLogout = () => {
-  // 模态弹窗
   uni.showModal({
     content: '是否退出登录？',
     confirmColor: '#27BA9B',
