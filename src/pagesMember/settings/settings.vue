@@ -10,7 +10,6 @@ const onLogout = () => {
     confirmColor: '#27BA9B',
     success: (res) => {
       if (res.confirm) {
-        // 清理用户信息
         memberStore.clearProfile()
         uni.navigateBack()
       }
