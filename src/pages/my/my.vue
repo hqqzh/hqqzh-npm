@@ -93,13 +93,13 @@ const { guessRef, onScrolltolower } = useGuessList()
 page {
   height: 100%;
   overflow: hidden;
-  background-color: #f7f7f8;
+  background-color: #1818c2;
 }
 
 .viewport {
   height: 100%;
   background-repeat: no-repeat;
-  background-image: url(https://pcapi-xiaotuxian-front-devtest.itheima.net/miniapp/images/center_bg.png);
+  // background-image: url(https://pcapi-xiaotuxian-front-devtest.itheima.net/miniapp/images/center_bg.png);
   background-size: 100% auto;
 }
 
