@@ -24,7 +24,6 @@ const onLogout = () => {
         我的收货地址
       </navigator>
     </view>
-    <!-- #ifdef MP-WEIXIN -->
     <!-- 列表2 -->
     <view class="list">
       <button hover-class="none" class="item arrow" open-type="openSetting">授权管理</button>
