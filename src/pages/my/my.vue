@@ -93,7 +93,7 @@ const { guessRef, onScrolltolower } = useGuessList()
 page {
   height: 100%;
   overflow: hidden;
-  background-color: #1818c2;
+  background-color: #f7f7f8;
 }
 
 .viewport {
